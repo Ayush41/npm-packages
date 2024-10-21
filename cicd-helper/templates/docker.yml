@@ -1,0 +1,19 @@
+name: Docker CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - $BRANCH
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build Docker image
+        run: docker build -t my-app .
+      - name: Push Docker image
+        run: |
+          echo "Pushing Docker image to registry"
