@@ -9,6 +9,6 @@
   "author": "Ayush Raj",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^12.0.0"
+    "inquirer": "^8.0.0"
   }
 }
