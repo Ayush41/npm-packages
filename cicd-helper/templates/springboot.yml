@@ -1,0 +1,26 @@
+name: Spring Boot CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+      - name: Build with Maven
+        run: |
+          mvn install
+      - name: Run tests
+        run: |
+          mvn test
+      - name: Deploy
+        run: |
+          echo "Deploying Spring Boot application"
