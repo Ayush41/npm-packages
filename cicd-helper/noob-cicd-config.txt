@@ -1,0 +1,3 @@
+# CI/CD Configuration for noob
+Using Flask framework.
+Docker integration is enabled.

@@ -1,5 +1,5 @@
 {
-  "name": "cicd-templates",
+  "name": "cicd-helper",
   "version": "1.0.0",
   "description": "🚀 cicd-helper is an easy-to-use CLI tool that helps developers quickly set up CI/CD pipelines for popular frameworks like Flask, Django, Spring Boot, and Node.js. It also provides Docker integration to get your applications containerized, saving you time on repetitive tasks and ensuring consistent setups.",
   "main": "index.js",
@@ -9,6 +9,20 @@
   "author": "Ayush Raj",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^8.0.0"
-  }
+    "cicd-helper": "^1.0.0",
+    "inquirer": "^8.2.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "cicd-helper is an easy-to-use CLI tool that helps developers quickly set up CI/CD pipelines for popular frameworks like Flask, Django, Spring Boot, and Node.js. It also provides Docker integration to get your applications containerized, saving you time on repetitive tasks and ensuring consistent setups.\""
+  },
+  "bin": {
+    "cicd-helper": "./index.js"
+  },
+  "keywords": [
+    "ci",
+    "cd",
+    "helper",
+    "docker"
+  ]
 }
